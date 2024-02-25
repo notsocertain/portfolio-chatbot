@@ -24,3 +24,21 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Ignore all models
+/models/
+
+# Ignore virtual environment
+venv/
+env/
+myenv3/
+myenv/
+
+# Ignore temporary files
+*.pyc
+__pycache__/
+*.log
+.tmp
+
+# Exclude files that may contain sensitive information
+credentials.yml

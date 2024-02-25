@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chatbot</title>
+<style>
+    /* Basic styling */
+    body { font-family: Arial, sans-serif; }
+    .chat-container { width: 400px; margin: auto; background: #f4f4f4; border-radius: 10px; padding: 20px; }
+    .chat-box { border: 2px solid #dedede; background-color: #f1f1f1; border-radius: 5px; padding: 10px; margin: 10px 0; }
+    .user { background-color: #4CAF50; color: white; }
+</style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div id="chatbox">
+        <p class="chat-box">Your chat messages will appear here.</p>
+    </div>
+    <input type="text" id="userInput" placeholder="Say something..." autocomplete="off">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+// JavaScript to interact with Rasa will go here
+<script>
+const chatbox = document.getElementById("chatbox");
+
+function appendMessage(user, text) {
+    const messageDiv = document.createElement("div");
+    messageDiv.classList.add("chat-box", user ? "user" : "bot");
+    messageDiv.textContent = text;
+    chatbox.appendChild(messageDiv);
+}
+
+async function sendMessage() {
+    const inputField = document.getElementById("userInput");
+    let message = inputField.value;
+    appendMessage(true, message);
+    inputField.value = '';
+
+    // Send message to Rasa
+    const response = await fetch('http://localhost:5005/webhooks/rest/webhook', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+            sender: "user",
+            message: message
+        }),
+    });
+
+    const responseData = await response.json();
+
+    // Assuming Rasa responds with at least one message
+    if (responseData && responseData.length > 0) {
+        appendMessage(false, responseData[0].text);
+    }
+}
+
+document.getElementById("userInput").addEventListener("keypress", function(event) {
+    // When the user presses the Enter key, send the message
+    if (event.key === "Enter") {
+        sendMessage();
+    }
+});
+</script>
+
+</script>
+
+</body>
+</html>
