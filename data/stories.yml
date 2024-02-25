@@ -1,0 +1,63 @@
+version: "3.1"
+
+stories:
+- story: User greets the bot
+  steps:
+  - intent: greetings
+  - action: utter_greetings
+
+- story: User says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: User asks about music
+  steps:
+  - intent: musics
+  - action: utter_musics
+
+# Continue for each intent...
+- story: User asks about movies
+  steps:
+  - intent: movies
+  - action: utter_movies
+
+- story: User inquires about projects
+  steps:
+  - intent: projects
+  - action: utter_projects
+
+- story: User questions about education
+  steps:
+  - intent: education
+  - action: utter_education
+
+- story: User wants to know about hobbies
+  steps:
+  - intent: hobbies
+  - action: utter_hobbies
+
+- story: User asks about sports
+  steps:
+  - intent: sports
+  - action: utter_sports
+
+- story: User inquires about pictures
+  steps:
+  - intent: photos
+  - action: utter_photos
+
+- story: User inquires about socials
+  steps:
+  - intent: socials
+  - action: utter_socials
+
+- story: User inquires about resume
+  steps:
+  - intent: resume
+  - action: utter_resume
+
+- story: User wants another pages
+  steps:
+  - intent: visual
+  - action: utter_visual

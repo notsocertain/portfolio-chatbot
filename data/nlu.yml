@@ -1,0 +1,75 @@
+version: "3.1"
+
+nlu:
+- intent: greetings
+  examples: |
+    - Hi
+    - Hello
+    - Hey there
+    - Hola
+    - Good morning
+    - Good afternoon
+- intent: goodbye
+  examples: |
+    - Bye
+    - Goodbye
+    - See you later
+- intent: musics
+  examples: |
+    - What music do you like?
+    - Tell me about your music preferences.
+    - who are your favorite music artists?
+- intent: movies
+  examples: |
+    - What's your favorite movie?
+    - What movies do you recommend?
+    - what movies do you watch?
+- intent: projects
+  examples: |
+    - What projects have you worked on?
+    - Tell me about your projects.
+    - Show me some of your projects.
+    - Show me your github.
+    - Can I see your projects
+- intent: education
+  examples: |
+    - Where did you study?
+    - Tell me about your educational background.
+    - Tell me about your credentials.
+- intent: hobbies
+  examples: |
+    - What are your hobbies?
+    - What do you do in your free time?
+    - Whar are your interests and hobbies
+- intent: sports
+  examples: |
+    - Do you like sports?
+    - What's your favorite sport?
+- intent: photos
+  examples: |
+    - Do you like photography?
+    - Show me some of your pictures.
+    - Can I see your photos?
+    - Show me your favorite photograph.
+- intent: socials
+  examples: |
+    - Do you have social medias
+    - Show me some of your pictures.
+    - Where can I contact you?
+    - How can we be friends?
+    - I want to connect with you
+
+- intent: resume
+  examples: |
+    - Show me your resume
+    - Can I see your cv?
+    - Where can I find your resume?
+    - How to download your cv
+    - I want to see your resume
+
+  - intent: visual
+   examples: |
+    - Show me the other site
+    - I don't like this portfolio
+    - I want to see graphics
+    - Where is the colorful page?

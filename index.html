@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot</title>
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Override Tailwind styles for terminal-like appearance */
+    .chat-container {
+      background-color: #000;
+      color: #0F0;
+      font-family: monospace;
+    }
+    .chat-box {
+      background-color: #000;
+      color: #0F0;
+      overflow-y: scroll;
+      height: 300px;
+      border: 1px solid #00FF00;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    input[type="text"] {
+      background-color: #000;
+      color: #0F0;
+      border: 1px solid #00FF00;
+      padding: 10px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      width: calc(100% - 78px);
+    }
+    button {
+      background-color: #00FF00;
+      color: #000;
+      border: 1px solid #00FF00;
+      padding: 10px;
+      cursor: pointer;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      width: 70px;
+    }
+  </style>
+</head>
+<body class="bg-black">
+  <div class="max-w-md mx-auto mt-10 p-6 chat-container rounded-lg shadow-md">
+    <div class="chat-box" id="chat-box"></div>
+    <div class="flex">
+      <input type="text" id="user-input" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
