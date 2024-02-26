@@ -1,29 +1,27 @@
-# Use the official Rasa SDK image as a parent image
-FROM rasa/rasa:3.0.0-full
+# Use the official Rasa SDK image as a base image
+# Use the official Rasa SDK image as a base image, ensuring the version matches or exceeds your training data format version
+FROM rasa/rasa:3.6.18-full
 
-# Use root to perform installations and operations
+# Use root to install additional dependencies
 USER root
 
-# Install additional dependencies if needed
-# RUN pip install <your-dependency>
-
-# Copy the content of your chatbot project to the image
+# Copy your Rasa project into the container
 COPY . /app
 
-# Change ownership of the /app directory to the non-root user (assuming '1001' is the user ID)
+# Change the ownership of the /app directory to the non-root user
 RUN chown -R 1001 /app
 
-# Change back to the non-root rasa user
+# Switch back to the non-root user
 USER 1001
 
 # Set the working directory to /app
 WORKDIR /app
 
-# Train the Rasa model when the container is created
+# Train the Rasa model when the container is built
 RUN rasa train
 
-# Expose the port the app runs on
+# Expose the port Rasa server runs on
 EXPOSE 5005
 
-# Command to run the chatbot server
-CMD ["rasa", "run", "-m", "/app/models", "--enable-api", "--cors", "*", "--debug"]
+# Define the command to run your bot
+CMD ["rasa", "run", "--enable-api", "--cors", "*"]
