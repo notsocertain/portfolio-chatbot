@@ -1,5 +1,6 @@
 version: "3.1"
 
+
 intents:
   - greetings
   - goodbye
@@ -14,12 +15,14 @@ intents:
   - resume
   - visual
   - compliment
+  - about
+  - location
 
 responses:
   utter_greetings:
     - text: "Hello! I am basically Nishant How can I help you?"
   utter_goodbye:
-    - text: "Goodbye! Have a great day.Be sure to check out the other<a href='https://notsocertain.github.io/personal-website/' target='_blank'>Page</a>"
+    - text: "Goodbye! Have a great day.Be sure to check out the other<a href='https://notsocertain.github.io/personal-website/' target='_blank'> Page</a>"
   utter_musics:
     - text: "I love listening to classic rock and I am a huge fan of the 80s music. Follow me on <a href='https://open.spotify.com/user/tdtmcc39f3stjz22wsxt0v6ez?si=e024e15438f64def' target='_blank'>Spotify</a> to know more about my music taste."
   utter_movies:
@@ -65,6 +68,12 @@ responses:
   utter_thank_you:
     - text: "Thank you! I'm glad you think so."
     - text: "Thanks! I appreciate it."
+
+  utter_about:
+    - text: "I'm currently pursuing a degree in Computer Engineering at Thapathali Campus, Tribhuvan University. With a strong passion for web development and a deep interest in machine learning, I'm a dedicated individual. Beyond my studies, I find joy in Formula 1 racing and football, and I'm excited to share my journey and insights with you. Welcome to my digital space!"
+
+  utter_location:
+   - text: "I am from a small but beautiful country called Nepal located in the lap of himalayas in South east Asia "
 
 
 session_config:

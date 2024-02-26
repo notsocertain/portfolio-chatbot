@@ -62,8 +62,18 @@ stories:
   - intent: visual
   - action: utter_visual
 
-stories:
+
 - story: Compliment response
   steps:
   - intent: compliment
   - action: utter_thank_you
+
+- story: user asks about me response
+  steps:
+  - intent: about
+  - action: utter_about
+
+- story: user asks about location
+  steps:
+  - intent: location
+  - action: utter_location

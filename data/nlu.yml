@@ -9,6 +9,18 @@ nlu:
     - Hola
     - Good morning
     - Good afternoon
+    - Hi there
+    - Howdy
+    - Hey
+    - What's up?
+    - Greetings
+    - Salutations
+    - Yo!
+    - Bonjour
+    - Namaste
+    - Wassup?
+    - Good day
+    - Hiya!
 - intent: goodbye
   examples: |
     - Bye
@@ -26,11 +38,20 @@ nlu:
     - describe your music taste
     - Tell me about your music preferences.
     - who are your favorite music artists?
+    - What genre of music do you enjoy?
+    - Can you recommend any good songs?
+    - Do you have a favorite music genre?
+    - Share some of your favorite bands or musicians.
+    - Are there any specific albums you're currently listening to?
+   
 - intent: movies
   examples: |
     - What's your favorite movie?
     - What movies do you recommend?
     - what movies do you watch?
+    - Can you recommend any good movies?
+    - What movies have you watched recently?
+    - Tell me about a movie you really enjoyed.
 - intent: projects
   examples: |
     - What projects have you worked on?
@@ -38,8 +59,22 @@ nlu:
     - Show me some of your projects.
     - Show me your github.
     - Can I see your projects
+    - What are the names of the projects you've worked on recently?
+    - Can you provide a list of the projects you've completed?
+    - What are some examples of the projects you've contributed to?
+    - Could you share the titles of the projects you've showcased on your portfolio?
+    - What open-source projects have you been involved in?
+    - Can you list the projects you're currently working on?
+    - What are the main projects you've worked on during your career?
+    - Could you name a few projects that demonstrate your skills in?
+    - What are the most significant projects you've led or managed?
+    - Can you give me some examples of projects where you've collaborated with others?
+
 - intent: education
   examples: |
+    - what's your qualification
+    - show me your qualifications
+    - how qualified are you
     - Where did you study?
     - Tell me about your educational background.
     - Tell me about your credentials.
@@ -47,18 +82,60 @@ nlu:
   examples: |
     - What are your hobbies?
     - What do you do in your free time?
-    - Whar are your interests and hobbies?
+    - What are your interests and hobbies?
+    - Can you tell me about your hobbies?
+    - What are some activities you enjoy doing outside of work?
+    - How do you like to spend your leisure time?
+    - Do you have any favorite pastimes?
+    - What sorts of things do you like to do for fun?
+    - Could you share some of your hobbies with me?
+    - Are there any particular hobbies you're passionate about?
+    - What do you like to do when you're not busy?
+    - Can you describe some of your interests and hobbies?
+    - What activities bring you joy and relaxation?
+    - Do you have any hobbies or interests that you've been pursuing lately?
+    - Are there any hobbies you've been wanting to try out or learn more about?
+    - How do you unwind after a long day?
+
 - intent: sports
   examples: |
     - Do you like sports?
     - What's your favorite sport?
     - What sports do you watch?
+    - Which sports do you enjoy playing?
+    - Are you a fan of any particular sports team?
+    - Do you follow any sports leagues or competitions?
+    - Have you ever played any sports competitively?
+    - What's your opinion on sports?
+
 - intent: photos
   examples: |
     - Do you like photography?
     - Show me some of your pictures.
     - Can I see your photos?
     - Show me your favorite photograph.
+    - Do you like taking photos?
+    - Can you show me some photos you've taken?
+    - I'd love to see your photo collection. Can you share?
+    - Could you display some of your captured moments?
+    - Do you have any pictures you'd like to share?
+    - Can I take a look at your photo gallery?
+    - Show me some of the photos you've snapped.
+    - I'm curious to see your pictures. Can you show me?
+    - Can you provide a glimpse into your photo album?
+    - Would you mind sharing some of your favorite photos?
+    - Do you have any memorable photos you'd like to show me?
+    - Can you showcase some of your photographic work?
+    - I'd like to see your photos. Can you show them to me?
+    - Can you show me a picture you're particularly proud of?
+    - Could you share some photos that represent your style?
+    - Show me your favorite photo.
+    - Can you display some of your captured images?
+    - I'd like to see some of your shots. Can you show me?
+    - Can you provide a link to your photo gallery?
+    - Do you have any photos you'd like to show off?
+    - Can you share some of the photos you've captured?
+
 - intent: socials
   examples: |
     - Do you have social medias
@@ -66,6 +143,17 @@ nlu:
     - Where can I contact you?
     - How can we be friends?
     - I want to connect with you
+    - What social media platforms are you active on?
+    - Could you provide links to your social media profiles?
+    - Where can I find your latest updates and posts online?
+    - How can I connect with you on social media?
+    - Do you have a preferred social media platform for professional networking?
+    - Can you share your Instagram/Twitter/Facebook handle?
+    - Where can I follow you to stay updated on your activities?
+    - Do you have a LinkedIn profile for professional connections?
+    - Are there any other online platforms where you share your work or connect with others?
+    - How can I reach out to you for collaboration or inquiries?
+    - How can I contact you
 
 - intent: resume
   examples: |
@@ -75,6 +163,16 @@ nlu:
     - How to download your cv
     - I want to see your resume
     - Show me your biodata
+    - Do you have a digital copy of your resume that I can view?
+    - Could you provide a link to download your CV?
+    - Where can I find your professional background and qualifications documented?
+    - How can I access your resume online?
+    - Can you share your CV with me?
+    - Is there a website or platform where I can view your biodata?
+    - Do you have a PDF version of your resume that I can download?
+    - Could you direct me to where I can find your curriculum vitae?
+    - Can you provide details on how to access your professional profile or resume?
+    -Are there any specific platforms or websites where your resume is available for viewing or download?
 
 - intent: visual
   examples: |
@@ -83,8 +181,23 @@ nlu:
     - I don't like this portfolio
     - I want to see graphics
     - Where is the colorful page?
+    - Can you show me a different portfolio?
+    - I'm interested in seeing more of your work.
+    - Do you have another website or portfolio I can view?
+    - Could you direct me to your alternate page?
+    - I'm looking for something different, can you show me another site?
+    - Can you provide a link to the other portfolio you mentioned?
+    - I'm not satisfied with this, can you show me something else?
+    - Is there another webpage with more graphics?
+    - Where can I find the page with more color and graphics?
+    - I'm looking for a portfolio with a different style, can you show me?
+    - Can you guide me to the page with more visual elements?
+    - Do you have a portfolio with a more colorful design?
+
 - intent: compliment
   examples: |
+    - Nice page
+    - Very good
     - You're amazing
     - Awesome work
     - You're the best
@@ -92,3 +205,84 @@ nlu:
     - Great work
     - I love what you're doing
     - I like it
+    - Impressive work!
+    - Well done!
+    - Bravo!
+    - Remarkable!
+    - Superb job!
+    - You're doing great!
+    - Excellent work!
+    - Kudos to you!
+    - I'm impressed!
+    - Stellar job!
+    - Keep up the good work!
+    - You're doing amazing things!
+    - Phenomenal job!
+    - Terrific work!
+    - Exceptional job!
+
+- intent: about
+  examples: |
+    - tell me about you
+    - who are you
+    - how would you describe you
+    - Can you tell me more about yourself?
+    - Who exactly are you?
+    - How would you describe yourself?
+    - Can you provide some information about you?
+    - I'd like to learn more about you. Can you share?
+    - What can you tell me about yourself?
+    - Who or what are you?
+    - Can you give me a brief introduction about you?
+    - How do you define yourself?
+    - Can you describe yourself in a few words?
+    - What should I know about you?
+    - Who is the person behind the screen?
+    - Could you share some details about yourself?
+    - What's your story?
+    - Can you provide some background information about yourself?
+    - Tell me a little bit about who you are.
+    - How would you introduce yourself to someone new?
+    - Can you give me an overview of who you are?
+
+- intent: goals
+  examples: |
+     - tell me about you
+     - What are your dreams and goals?
+     - Tell me about your aspirations.
+     - What do you hope to achieve in the future?
+     - Can you share your dreams with me?
+     - What are you working towards?
+     - Describe your long-term goals.
+     - What ambitions do you have?
+     - What dreams are you pursuing?
+     - Share your future plans with me.
+     - Can you talk about your hopes and dreams?
+     - What do you envision for your future?
+     - Tell me about your goals in life.
+     - Describe your dreams and aspirations.
+     - What are you aiming for in the long run?
+     - What are your big dreams?
+     - Can you share your goals with me?
+
+- intent: location
+  examples: |
+    - Where are you from?
+    - What's your hometown?
+    - Can you tell me where you're from?
+    - What city are you originally from?
+    - Where were you born?
+    - Tell me about your place of origin.
+    - What is your native town?
+    - Can you share your birthplace with me?
+    - From which location do you originate?
+    - I'm curious, where do you hail from?
+    - What is your hometown?
+    - Where were you raised?
+    - What is your country of origin?
+    - Where do you call home?
+    - Could you tell me where you grew up?
+    - I'd like to know where you come from.
+    - What's the name of your hometown?
+    - Can you provide some insight into your background?
+    - Where do you identify as your home?

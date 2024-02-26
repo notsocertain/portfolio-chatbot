@@ -1,0 +1,18 @@
+name: rasa-bot
+services:
+  rasa:
+    public: true
+    image: yourdockerhubusername/rasa-bot:latest
+    build: .
+    ports:
+      - 5005
+    resources:
+      cpu: 500m
+      memory: 1024Mi
+    environment:
+      - CORS=*
+    persistentVolume:
+      enabled: true
+      size: 10Gi
+      mountPath: /app/models
+    command: ["rasa", "run", "--enable-api", "--cors", "*"]

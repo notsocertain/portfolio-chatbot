@@ -1,0 +1,12 @@
+version: '3'
+services:
+  rasa:
+    container_name: rasa_bot
+    build: .
+    volumes:
+      - ./:/app
+      - ./models:/app/models
+    ports:
+      - "5005:5005"
+    environment:
+      - CORS=*
