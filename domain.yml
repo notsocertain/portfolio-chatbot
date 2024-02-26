@@ -13,6 +13,7 @@ intents:
   - socials
   - resume
   - visual
+  - compliment
 
 responses:
   utter_greetings:
@@ -25,6 +26,7 @@ responses:
     - text: "My favorite movies are '12 Angry Men' and 'It's a wonderful world'."
   utter_photos:
     - custom:
+        text: "Here are few of my photos"
         images: 
           - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/passwordmanager.png"
           - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/planetarymotion.png"
@@ -51,14 +53,19 @@ responses:
           - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/todo.png"
           - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/travelblog.png"
   utter_socials:
-    - text: "You can connect with me on <a href='https://www.linkedin.com/in/yourprofile' target='_blank'>LinkedIn</a>, follow me on <a href='https://twitter.com/yourusername' target='_blank'>Twitter</a>, add me on <a href='https://www.instagram.com/yourusername' target='_blank'>Instagram</a>"
+    - text: "You can connect with me on <a href='https://www.linkedin.com/in/nishant-uprety-8142521b9/' target='_blank'>LinkedIn</a>, follow me on <a href='https://twitter.com/notsostrongwind' target='_blank'>Twitter</a>, add me on <a href='https://www.instagram.com/notsocertainwind' target='_blank'>Instagram</a>"
   utter_resume:
     - text: "View my resume <a href='https://drive.google.com/file/d/1L1Pem6TAI6OlfTykMvMn4MRLjWyiFQRk/view?usp=sharing' target = '_blank'>here</a>"
   utter_visual:
     - text: "Here is another portfolio <a href='https://notsocertain.github.io/personal-website/' target='_blank'>page</a>"
 
   utter_please_rephrase:
-    - text: I'm sorry, I didn't quite understand that.I am still learning about life. Could you rephrase?
+    - text: I'm sorry, I didn't quite understand that.I am still learning. Could you rephrase?
+
+  utter_thank_you:
+    - text: "Thank you! I'm glad you think so."
+    - text: "Thanks! I appreciate it."
+
 
 session_config:
   session_expiration_time: 60

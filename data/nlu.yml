@@ -14,9 +14,16 @@ nlu:
     - Bye
     - Goodbye
     - See you later
+    - Ciao
+    - See ya
+    - Later
+    - Sayonara
+    - Bye-Bye
 - intent: musics
   examples: |
     - What music do you like?
+    - what songs do you listen to?
+    - describe your music taste
     - Tell me about your music preferences.
     - who are your favorite music artists?
 - intent: movies
@@ -40,11 +47,12 @@ nlu:
   examples: |
     - What are your hobbies?
     - What do you do in your free time?
-    - Whar are your interests and hobbies
+    - Whar are your interests and hobbies?
 - intent: sports
   examples: |
     - Do you like sports?
     - What's your favorite sport?
+    - What sports do you watch?
 - intent: photos
   examples: |
     - Do you like photography?
@@ -66,6 +74,7 @@ nlu:
     - Where can I find your resume?
     - How to download your cv
     - I want to see your resume
+    - Show me your biodata
 
 - intent: visual
   examples: |
@@ -74,3 +83,12 @@ nlu:
     - I don't like this portfolio
     - I want to see graphics
     - Where is the colorful page?
+- intent: compliment
+  examples: |
+    - You're amazing
+    - Awesome work
+    - You're the best
+    - Nice job
+    - Great work
+    - I love what you're doing
+    - I like it

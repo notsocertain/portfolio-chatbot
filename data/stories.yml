@@ -61,3 +61,9 @@ stories:
   steps:
   - intent: visual
   - action: utter_visual
+
+stories:
+- story: Compliment response
+  steps:
+  - intent: compliment
+  - action: utter_thank_you
