@@ -20,24 +20,36 @@ responses:
   utter_goodbye:
     - text: "Goodbye! Have a great day.Be sure to check out the other<a href='https://notsocertain.github.io/personal-website/' target='_blank'>Page</a>"
   utter_musics:
-    - text: "I love listening to classic rock and I am a huge fan of the 80s music
-            Follow me on <a href ='https://open.spotify.com/user/tdtmcc39f3stjz22wsxt0v6ez?si=e024e15438f64def' target='_blank>Spotify </a> to know more about my music taste"
+    - text: "I love listening to classic rock and I am a huge fan of the 80s music. Follow me on <a href='https://open.spotify.com/user/tdtmcc39f3stjz22wsxt0v6ez?si=e024e15438f64def' target='_blank'>Spotify</a> to know more about my music taste."
   utter_movies:
     - text: "My favorite movies are '12 Angry Men' and 'It's a wonderful world'."
-  utter_projects:
-    - text: "I've worked on several projects, including web development and AI research.
-            Here you can find all of them in my <a href ='https://github.com/notsocertain' target='_blank>Github </a>"
+  utter_photos:
+    - custom:
+        images: 
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/passwordmanager.png"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/planetarymotion.png"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/todo.png"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/travelblog.png"
   utter_education:
     - text: "I am studying  Computer Engineering at Tribhuvan University Thapathali Campus."
   utter_hobbies:
-    - text: "I enjoy hiking, reading, and coding in my free time."
+    - custom:
+        text: "I enjoy reading books watching football and f1 in free time"
+        images: 
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/interests/f12.gif"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/interests/football2.gif"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/interests/studying.jpg"
   utter_sports:
     - text: "I'm a huge fan of formula 1 and soccer and occasionally play cricket too"
-  utter_photos:
-    - text: "Here are some photos I've taken:"
-      image: "https://i.imgur.com/nGF1K8f.jpg"
-    # - image: "https://i.imgur.com/nGF1K8f.jpg"
-    # - image: "https://i.imgur.com/nGF1K8f.jpg"
+  utter_projects:
+    - custom:
+        text: "I've worked on several projects, including web development and AI research.
+              Here you can find all of them in my <a href ='https://github.com/notsocertain' target='_blank'>Github </a>"
+        images: 
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/passwordmanager.png"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/planetarymotion.png"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/todo.png"
+          - "https://raw.githubusercontent.com/notsocertain/personal-website/master/img/projects/travelblog.png"
   utter_socials:
     - text: "You can connect with me on <a href='https://www.linkedin.com/in/yourprofile' target='_blank'>LinkedIn</a>, follow me on <a href='https://twitter.com/yourusername' target='_blank'>Twitter</a>, add me on <a href='https://www.instagram.com/yourusername' target='_blank'>Instagram</a>"
   utter_resume:
@@ -45,7 +57,8 @@ responses:
   utter_visual:
     - text: "Here is another portfolio <a href='https://notsocertain.github.io/personal-website/' target='_blank'>page</a>"
 
-
+  utter_please_rephrase:
+    - text: I'm sorry, I didn't quite understand that.I am still learning about life. Could you rephrase?
 
 session_config:
   session_expiration_time: 60

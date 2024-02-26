@@ -1,0 +1,10 @@
+[
+  {
+    "text": "Show me some of your pictures.",
+    "intent": "socials",
+    "intent_prediction": {
+      "name": "photos",
+      "confidence": 0.6327835917472839
+    }
+  }
+]

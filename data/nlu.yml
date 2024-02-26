@@ -67,8 +67,9 @@ nlu:
     - How to download your cv
     - I want to see your resume
 
-  - intent: visual
-   examples: |
+- intent: visual
+  examples: |
+    - you got a bad portfolio
     - Show me the other site
     - I don't like this portfolio
     - I want to see graphics
